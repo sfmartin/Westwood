@@ -1,0 +1,15 @@
+Define Event == 50yr_2Hr
+    BC Event Source == ~e~ | 50yr_2Hr
+    End time == 6
+End Define
+
+Define Event == 100yr_2Hr
+    BC Event Source == ~e~ | 100yr_2Hr
+    End time == 6
+End Define
+
+Define Event == 500yr_2Hr
+    BC Event Source == ~e~ | 500yr_2Hr
+    End time == 6
+End Define
+

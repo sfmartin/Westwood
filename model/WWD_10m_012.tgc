@@ -1,0 +1,27 @@
+!______________________________________________________________
+!Domain
+Origin == 208500, 7383000
+Orientation angle == 0
+Cell Size == 10
+Grid Size (X,Y) == 2500, 4000
+
+!______________________________________________________________
+!Code
+Set Code == 0
+Read GIS code == gis\2d_code_012.shp
+
+!______________________________________________________________
+!Terrain
+Set Zpts == 300
+Read Grid Zpts == grid\Westwood_1m_clipped.flt
+
+!Alterations/Enforcements
+read gis z shape RAISE == gis\2d_zsh_road_010_L.shp | gis\2d_zsh_road_010_P.shp
+read gis z shape RAISE == gis\2d_zsh_rail_009_L.shp | gis\2d_zsh_rail_009_P.shp
+read gis z shape LOWER == gis\2d_zsh_culvert_009_R.shp | gis\2d_zsh_culvert_009_P.shp
+
+!______________________________________________________________
+!Material
+Set Mat == 7
+Read gis mat == gis\2d_mat_LUMP_003.shp
+Read gis mat == gis\2d_mat_creek_003.shp

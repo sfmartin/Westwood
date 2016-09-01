@@ -1,0 +1,13 @@
+! Materials file for TUFLOW 
+
+! First value is the Material ID, the second number is the Manning's n value
+
+  1, 0.050 ! Minimal use
+  2, 0.050 ! Livestock grazing
+  3, 0.050 ! Cropping
+  4, 0.060 ! Residential
+  5, 0.060 ! Services
+  6, 0.060 ! Creek bed and riparian
+  7, 0.050 ! default
+ 
+  

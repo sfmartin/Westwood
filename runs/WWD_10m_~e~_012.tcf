@@ -1,0 +1,38 @@
+! Westwood TUFLOW model
+! MODELLER: Ellis Symons
+! DATE: 19/08/2014
+! TUFLOW model build 2013-12-AC_DP_w64
+!______________________________________________________________
+
+GIS Format == SHP
+SHP Projection == ..\model\gis\projection_MGA56.prj
+log folder == log
+
+!______________________________________________________________
+! CONTROL FILES
+geometry control file == ..\model\WWD_10m_012.tgc
+bc control file == ..\model\WWD_10m_012.tbc
+Read Materials File == ..\model\WWD_012.tmf
+BC database == ..\bc_dbase\bc_dbase_012.csv
+Event file == WWD_012.tef
+
+!______________________________________________________________
+! Run settings
+start time == 0
+timestep == 2
+
+!______________________________________________________________
+! OUTPUT
+Write Check Files == ..\check\design\2d\
+Output folder == ..\results\design\2d
+Map output interval == 600
+Map output data types == d h V q
+Map output formats == WRB | GRID | DAT
+Grid Format == FLT
+Grid output cell size == 10
+maximums and minimums only for GRID == ON
+Store Maximums and Minimums == ON MAXIMUMS ONLY
+
+Read GIS PO == ..\model\gis\2d_po_003.shp
+Read gis LP == ..\model\gis\2d_lp_003.shp
+Time Series Output Interval == 60
