@@ -25,3 +25,5 @@ read gis z shape LOWER == gis\2d_zsh_culvert_009_R.shp | gis\2d_zsh_culvert_009_
 Set Mat == 7
 Read gis mat == gis\2d_mat_LUMP_003.shp
 Read gis mat == gis\2d_mat_creek_003.shp
+
+different improvements
